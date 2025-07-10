@@ -1,0 +1,69 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.478288",
+   "Default View_TopLeft":"-445,820",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 1230 -y 1000 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1230 -y 1030 -defaultsOSRD
+preplace port MUTE -pg 1 -lvl 4 -x 1230 -y 1270 -defaultsOSRD
+preplace port SW -pg 1 -lvl 4 -x 1230 -y 1300 -defaultsOSRD
+preplace port IIC_1 -pg 1 -lvl 4 -x 1230 -y 1060 -defaultsOSRD
+preplace port port-id_BCLK -pg 1 -lvl 4 -x 1230 -y 1380 -defaultsOSRD
+preplace port port-id_PBLRCLK -pg 1 -lvl 4 -x 1230 -y 1410 -defaultsOSRD
+preplace port port-id_RECLRCLK -pg 1 -lvl 4 -x 1230 -y 1440 -defaultsOSRD
+preplace port port-id_PBDATA -pg 1 -lvl 4 -x 1230 -y 1470 -defaultsOSRD
+preplace port port-id_FCLK_CLK1 -pg 1 -lvl 4 -x 1230 -y 1110 -defaultsOSRD
+preplace port port-id_RECDAT -pg 1 -lvl 0 -x -10 -y 1420 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -x 990 -y 1070 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 990 -y 1280 -defaultsOSRD
+preplace inst zybo_audio_ctrl_0 -pg 1 -lvl 3 -x 990 -y 1430 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 550 -y 800 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 190 -y 1020 -defaultsOSRD
+preplace inst FIR_bandpass_300_3kHz_Left -pg 1 -lvl 3 -x 990 -y 400 -defaultsOSRD
+preplace inst FIR_bandpass_3k_20kHz_Left -pg 1 -lvl 3 -x 990 -y 80 -defaultsOSRD
+preplace inst FIR_bandpass_300_3kHz_Right -pg 1 -lvl 3 -x 990 -y 570 -defaultsOSRD
+preplace inst FIR_bandpass_3k_20kHz_Right -pg 1 -lvl 3 -x 990 -y 240 -defaultsOSRD
+preplace inst FIR_lowpass_300Hz_Left -pg 1 -lvl 3 -x 990 -y 750 -defaultsOSRD
+preplace inst FIR_lowpass_300Hz_Right -pg 1 -lvl 3 -x 990 -y 890 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -x 550 -y 360 -defaultsOSRD
+preplace netloc FIR_bandpass_300_3kHz_Left_interrupt 1 1 3 390 480 NJ 480 1200
+preplace netloc FIR_bandpass_300_3kHz_Right_interrupt 1 1 3 410 470 800J 650 1180
+preplace netloc FIR_bandpass_3k_20kHz_Left_interrupt 1 1 3 370 160 NJ 160 1200
+preplace netloc FIR_bandpass_3k_20kHz_Right_interrupt 1 1 3 380 250 800J 320 1200
+preplace netloc FIR_lowpass_300Hz_Left_interrupt 1 1 3 360 520 730J 660 1190
+preplace netloc FIR_lowpass_300Hz_Right_interrupt 1 1 3 400 510 740J 670 1180
+preplace netloc RECDAT_0_1 1 0 3 NJ 1420 NJ 1420 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 10 1120 370 530 770 1200 1190
+preplace netloc processing_system7_0_FCLK_CLK1 1 3 1 NJ 1110
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 4 20 1190 NJ 1190 NJ 1190 1180
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 390 540 780
+preplace netloc xlconcat_0_dout 1 2 1 760 360n
+preplace netloc zybo_audio_ctrl_0_BCLK 1 3 1 1190J 1380n
+preplace netloc zybo_audio_ctrl_0_PBDATA 1 3 1 1190J 1460n
+preplace netloc zybo_audio_ctrl_0_PBLRCLK 1 3 1 1200J 1410n
+preplace netloc zybo_audio_ctrl_0_RECLRCLK 1 3 1 NJ 1440
+preplace netloc axi_gpio_0_GPIO 1 3 1 NJ 1270
+preplace netloc axi_gpio_0_GPIO2 1 3 1 1200J 1290n
+preplace netloc processing_system7_0_DDR 1 3 1 1210J 1000n
+preplace netloc processing_system7_0_FIXED_IO 1 3 1 NJ 1030
+preplace netloc processing_system7_0_IIC_1 1 3 1 1210J 1050n
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 3 410 490 NJ 490 1200
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 710 730n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 690 750n
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 700 60n
+preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 720 220n
+preplace netloc ps7_0_axi_periph_M04_AXI 1 2 1 750 380n
+preplace netloc ps7_0_axi_periph_M05_AXI 1 2 1 790 550n
+preplace netloc ps7_0_axi_periph_M06_AXI 1 2 1 800 730n
+preplace netloc ps7_0_axi_periph_M07_AXI 1 2 1 N 870
+levelinfo -pg 1 -10 190 550 990 1230
+pagesize -pg 1 -db -bbox -sgen -110 0 1350 1520
+"
+}
+{
+   "da_axi4_cnt":"9",
+   "da_board_cnt":"1",
+   "da_ps7_cnt":"1"
+}

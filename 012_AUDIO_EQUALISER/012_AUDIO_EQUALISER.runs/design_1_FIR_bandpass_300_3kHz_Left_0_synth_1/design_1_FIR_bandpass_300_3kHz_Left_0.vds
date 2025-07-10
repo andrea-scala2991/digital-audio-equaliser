@@ -1,0 +1,413 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Jun  3 16:48:20 2025
+# Process ID: 1876
+# Current directory: D:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.runs/design_1_FIR_bandpass_300_3kHz_Left_0_synth_1
+# Command line: vivado.exe -log design_1_FIR_bandpass_300_3kHz_Left_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_FIR_bandpass_300_3kHz_Left_0.tcl
+# Log file: D:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.runs/design_1_FIR_bandpass_300_3kHz_Left_0_synth_1/design_1_FIR_bandpass_300_3kHz_Left_0.vds
+# Journal file: D:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.runs/design_1_FIR_bandpass_300_3kHz_Left_0_synth_1\vivado.jou
+# Running On: LAPTOP-19UCFVE2, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 2, Host memory: 8415 MB
+#-----------------------------------------------------------
+source design_1_FIR_bandpass_300_3kHz_Left_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1331.754 ; gain = 601.945
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/projects_HLS/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/projects_HLS/lowpass_300hz'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/projects_HLS/bandpass_300_3kHz'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Xilinx/projects_HLS/bandpass_3k_20kHz'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2021.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1356.645 ; gain = 24.891
+Command: synth_design -top design_1_FIR_bandpass_300_3kHz_Left_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2744
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:29 . Memory (MB): peak = 1356.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_FIR_bandpass_300_3kHz_Left_0' [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ip/design_1_FIR_bandpass_300_3kHz_Left_0/synth/design_1_FIR_bandpass_300_3kHz_Left_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'FIR_bandpass_300_3kHz' [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz.v:12]
+INFO: [Synth 8-6157] synthesizing module 'FIR_bandpass_300_3kHz_shift_reg_RAM_AUTO_1R1W' [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz_shift_reg_RAM_AUTO_1R1W.v:6]
+INFO: [Synth 8-3876] $readmem data file './FIR_bandpass_300_3kHz_shift_reg_RAM_AUTO_1R1W.dat' is read successfully [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz_shift_reg_RAM_AUTO_1R1W.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'FIR_bandpass_300_3kHz_shift_reg_RAM_AUTO_1R1W' (1#1) [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz_shift_reg_RAM_AUTO_1R1W.v:6]
+INFO: [Synth 8-6157] synthesizing module 'FIR_bandpass_300_3kHz_FIR_bandpass_300_3kHz_Pipeline_loop' [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz_FIR_bandpass_300_3kHz_Pipeline_loop.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FIR_bandpass_300_3kHz_FIR_bandpass_300_3kHz_Pipeline_loop_c_ROM_AUTO_1R' [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz_FIR_bandpass_300_3kHz_Pipeline_loop_c_ROM_AUTO_1R.v:6]
+INFO: [Synth 8-3876] $readmem data file './FIR_bandpass_300_3kHz_FIR_bandpass_300_3kHz_Pipeline_loop_c_ROM_AUTO_1R.dat' is read successfully [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz_FIR_bandpass_300_3kHz_Pipeline_loop_c_ROM_AUTO_1R.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'FIR_bandpass_300_3kHz_FIR_bandpass_300_3kHz_Pipeline_loop_c_ROM_AUTO_1R' (2#1) [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz_FIR_bandpass_300_3kHz_Pipeline_loop_c_ROM_AUTO_1R.v:6]
+INFO: [Synth 8-6157] synthesizing module 'FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1' [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1.v:46]
+INFO: [Synth 8-6157] synthesizing module 'FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1_DSP48_0' [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1_DSP48_0' (3#1) [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1' (4#1) [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1.v:46]
+INFO: [Synth 8-6157] synthesizing module 'FIR_bandpass_300_3kHz_flow_control_loop_pipe_sequential_init' [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz_flow_control_loop_pipe_sequential_init.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'FIR_bandpass_300_3kHz_flow_control_loop_pipe_sequential_init' (5#1) [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz_flow_control_loop_pipe_sequential_init.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'FIR_bandpass_300_3kHz_FIR_bandpass_300_3kHz_Pipeline_loop' (6#1) [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz_FIR_bandpass_300_3kHz_Pipeline_loop.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FIR_bandpass_300_3kHz_fir_io_s_axi' [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz_fir_io_s_axi.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz_fir_io_s_axi.v:213]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz_fir_io_s_axi.v:267]
+INFO: [Synth 8-6155] done synthesizing module 'FIR_bandpass_300_3kHz_fir_io_s_axi' (7#1) [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz_fir_io_s_axi.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'FIR_bandpass_300_3kHz' (8#1) [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FIR_bandpass_300_3kHz_Left_0' (9#1) [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ip/design_1_FIR_bandpass_300_3kHz_Left_0/synth/design_1_FIR_bandpass_300_3kHz_Left_0.v:58]
+WARNING: [Synth 8-7129] Port WDATA[31] in module FIR_bandpass_300_3kHz_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[30] in module FIR_bandpass_300_3kHz_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[29] in module FIR_bandpass_300_3kHz_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[28] in module FIR_bandpass_300_3kHz_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[27] in module FIR_bandpass_300_3kHz_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[26] in module FIR_bandpass_300_3kHz_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[25] in module FIR_bandpass_300_3kHz_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[24] in module FIR_bandpass_300_3kHz_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[23] in module FIR_bandpass_300_3kHz_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[22] in module FIR_bandpass_300_3kHz_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[21] in module FIR_bandpass_300_3kHz_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[20] in module FIR_bandpass_300_3kHz_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[19] in module FIR_bandpass_300_3kHz_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[18] in module FIR_bandpass_300_3kHz_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[17] in module FIR_bandpass_300_3kHz_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WDATA[16] in module FIR_bandpass_300_3kHz_fir_io_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module FIR_bandpass_300_3kHz_FIR_bandpass_300_3kHz_Pipeline_loop_c_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module FIR_bandpass_300_3kHz_shift_reg_RAM_AUTO_1R1W is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:37 . Memory (MB): peak = 1356.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:40 . Memory (MB): peak = 1356.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:40 . Memory (MB): peak = 1356.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.111 . Memory (MB): peak = 1356.645 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ip/design_1_FIR_bandpass_300_3kHz_Left_0/constraints/FIR_bandpass_300_3kHz_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ip/design_1_FIR_bandpass_300_3kHz_Left_0/constraints/FIR_bandpass_300_3kHz_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.runs/design_1_FIR_bandpass_300_3kHz_Left_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.runs/design_1_FIR_bandpass_300_3kHz_Left_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1356.645 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 1356.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:01:16 . Memory (MB): peak = 1356.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:01:16 . Memory (MB): peak = 1356.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.runs/design_1_FIR_bandpass_300_3kHz_Left_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:01:16 . Memory (MB): peak = 1356.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'FIR_bandpass_300_3kHz_fir_io_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'FIR_bandpass_300_3kHz_fir_io_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'FIR_bandpass_300_3kHz_fir_io_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'FIR_bandpass_300_3kHz_fir_io_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:01:19 . Memory (MB): peak = 1356.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   31 Bit       Adders := 1     
+	   3 Input   21 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               36 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               31 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 5     
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 26    
++---RAMs : 
+	               2K Bit	(150 X 16 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input   36 Bit        Muxes := 2     
+	   8 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_FIR_bandpass_300_3kHz_Pipeline_loop_fu_81/mac_muladd_13s_16s_36s_36_4_1_U1/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '36' bits. [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1.v:38]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_FIR_bandpass_300_3kHz_Pipeline_loop_fu_81/mac_muladd_13s_16s_36s_36_4_1_U1/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '36' bits. [d:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.gen/sources_1/bd/design_1/ipshared/affc/hdl/verilog/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1.v:31]
+DSP Report: Generating DSP grp_FIR_bandpass_300_3kHz_Pipeline_loop_fu_81/mac_muladd_13s_16s_36s_36_4_1_U1/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (C+(A2*B2)')'.
+DSP Report: register grp_FIR_bandpass_300_3kHz_Pipeline_loop_fu_81/mac_muladd_13s_16s_36s_36_4_1_U1/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP grp_FIR_bandpass_300_3kHz_Pipeline_loop_fu_81/mac_muladd_13s_16s_36s_36_4_1_U1/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register grp_FIR_bandpass_300_3kHz_Pipeline_loop_fu_81/mac_muladd_13s_16s_36s_36_4_1_U1/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP grp_FIR_bandpass_300_3kHz_Pipeline_loop_fu_81/mac_muladd_13s_16s_36s_36_4_1_U1/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register grp_FIR_bandpass_300_3kHz_Pipeline_loop_fu_81/mac_muladd_13s_16s_36s_36_4_1_U1/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP grp_FIR_bandpass_300_3kHz_Pipeline_loop_fu_81/mac_muladd_13s_16s_36s_36_4_1_U1/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register grp_FIR_bandpass_300_3kHz_Pipeline_loop_fu_81/mac_muladd_13s_16s_36s_36_4_1_U1/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP grp_FIR_bandpass_300_3kHz_Pipeline_loop_fu_81/mac_muladd_13s_16s_36s_36_4_1_U1/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator grp_FIR_bandpass_300_3kHz_Pipeline_loop_fu_81/mac_muladd_13s_16s_36s_36_4_1_U1/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1_DSP48_0_U/p is absorbed into DSP grp_FIR_bandpass_300_3kHz_Pipeline_loop_fu_81/mac_muladd_13s_16s_36s_36_4_1_U1/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator grp_FIR_bandpass_300_3kHz_Pipeline_loop_fu_81/mac_muladd_13s_16s_36s_36_4_1_U1/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1_DSP48_0_U/m is absorbed into DSP grp_FIR_bandpass_300_3kHz_Pipeline_loop_fu_81/mac_muladd_13s_16s_36s_36_4_1_U1/FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1_DSP48_0_U/p_reg_reg.
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[31] in module FIR_bandpass_300_3kHz is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[30] in module FIR_bandpass_300_3kHz is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[29] in module FIR_bandpass_300_3kHz is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[28] in module FIR_bandpass_300_3kHz is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[27] in module FIR_bandpass_300_3kHz is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[26] in module FIR_bandpass_300_3kHz is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[25] in module FIR_bandpass_300_3kHz is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[24] in module FIR_bandpass_300_3kHz is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[23] in module FIR_bandpass_300_3kHz is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[22] in module FIR_bandpass_300_3kHz is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[21] in module FIR_bandpass_300_3kHz is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[20] in module FIR_bandpass_300_3kHz is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[19] in module FIR_bandpass_300_3kHz is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[18] in module FIR_bandpass_300_3kHz is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[17] in module FIR_bandpass_300_3kHz is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WDATA[16] in module FIR_bandpass_300_3kHz is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WSTRB[3] in module FIR_bandpass_300_3kHz is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_fir_io_WSTRB[2] in module FIR_bandpass_300_3kHz is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (fir_io_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module FIR_bandpass_300_3kHz.
+WARNING: [Synth 8-3332] Sequential element (fir_io_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module FIR_bandpass_300_3kHz.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:01:26 . Memory (MB): peak = 1356.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++----------------------+----------------------------------------------------------+---------------+----------------+
+|Module Name           | RTL Object                                               | Depth x Width | Implemented As | 
++----------------------+----------------------------------------------------------+---------------+----------------+
+|FIR_bandpass_300_3kHz | grp_FIR_bandpass_300_3kHz_Pipeline_loop_fu_81/c_U/q0_reg | 256x13        | Block RAM      | 
++----------------------+----------------------------------------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | shift_reg_U/ram_reg | 150 x 16(READ_FIRST)   | W | R | 150 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------------------------------------------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                                 | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------------------------------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FIR_bandpass_300_3kHz_mac_muladd_13s_16s_36s_36_4_1_DSP48_0 | (C+(A2*B2)')' | 17     | 14     | 36     | -      | 36     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
++------------------------------------------------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:44 . Memory (MB): peak = 1356.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:01:45 . Memory (MB): peak = 1356.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | shift_reg_U/ram_reg | 150 x 16(READ_FIRST)   | W | R | 150 x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/shift_reg_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_FIR_bandpass_300_3kHz_Pipeline_loop_fu_81/c_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:01:45 . Memory (MB): peak = 1356.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:56 . Memory (MB): peak = 1356.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:56 . Memory (MB): peak = 1356.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:56 . Memory (MB): peak = 1356.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:56 . Memory (MB): peak = 1356.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:56 . Memory (MB): peak = 1356.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:56 . Memory (MB): peak = 1356.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++----------------------+------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name           | RTL Name                                                                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++----------------------+------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|FIR_bandpass_300_3kHz | grp_FIR_bandpass_300_3kHz_Pipeline_loop_fu_81/ap_loop_exit_ready_pp0_iter3_reg_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++----------------------+------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    18|
+|2     |DSP48E1  |     1|
+|3     |LUT1     |     2|
+|4     |LUT2     |    65|
+|5     |LUT3     |    99|
+|6     |LUT4     |    87|
+|7     |LUT5     |    23|
+|8     |LUT6     |    20|
+|9     |RAMB18E1 |     2|
+|11    |SRL16E   |     1|
+|12    |FDRE     |   191|
+|13    |FDSE     |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:56 . Memory (MB): peak = 1356.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:01:32 . Memory (MB): peak = 1356.645 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:56 . Memory (MB): peak = 1356.645 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1356.645 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1356.645 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 1cb51343
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:02:19 . Memory (MB): peak = 1356.645 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.runs/design_1_FIR_bandpass_300_3kHz_Left_0_synth_1/design_1_FIR_bandpass_300_3kHz_Left_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_FIR_bandpass_300_3kHz_Left_0, cache-ID = 9e8aff0765b68c86
+INFO: [Coretcl 2-1174] Renamed 8 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/Xilinx/projects/012_AUDIO_EQUALISER/012_AUDIO_EQUALISER.runs/design_1_FIR_bandpass_300_3kHz_Left_0_synth_1/design_1_FIR_bandpass_300_3kHz_Left_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_FIR_bandpass_300_3kHz_Left_0_utilization_synth.rpt -pb design_1_FIR_bandpass_300_3kHz_Left_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  3 16:51:38 2025...

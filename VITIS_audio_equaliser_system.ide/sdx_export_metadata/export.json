@@ -1,0 +1,25 @@
+{
+  "version": "2021.2",
+  "applications": [],
+  "platforms": [],
+  "systems": [
+    {
+      "name": "VITIS_012_audio_equaliser_system",
+      "platform": "D:/Xilinx/workspace/012_audio_equaliser/export/012_audio_equaliser/012_audio_equaliser.xpfm",
+      "sysConfig": "012_audio_equaliser",
+      "buildConfig": "Debug",
+      "applications": [
+        {
+          "name": "VITIS_012_audio_equaliser",
+          "platform": "D:/Xilinx/workspace/012_audio_equaliser/export/012_audio_equaliser/012_audio_equaliser.xpfm",
+          "platformPath": "D:\\Xilinx\\workspace\\012_audio_equaliser\\export\\012_audio_equaliser",
+          "sysConfig": "012_audio_equaliser",
+          "domain": "standalone_domain",
+          "system": "VITIS_012_audio_equaliser_system"
+        }
+      ],
+      "platformPath": "D:\\Xilinx\\workspace\\012_audio_equaliser\\export\\012_audio_equaliser"
+    }
+  ],
+  "others": []
+}
